@@ -1,0 +1,227 @@
+:root {
+  --accent-color: #4b8fc3;
+}
+
+section [class^="container"] {
+  padding: 4rem 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  section [class^="container"] {
+    padding: 4rem;
+  }
+  nav [class^="container"] {
+    padding: 0 4rem;
+  }
+}
+
+section:not(:first-of-type):not(:last-of-type) {
+  text-align: center;
+}
+
+section:nth-child(2n) {
+  background-color: #ecf2ff;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+section .card,
+.btn-outline-dark {
+  border: 2px solid black;
+  transition: all 0.4s;
+}
+
+.btn-outline-dark {
+  box-shadow: 4px 4px black;
+}
+
+section .card:hover {
+  box-shadow: 4px 4px black;
+}
+
+.btn-outline-dark:hover {
+  border: 2px solid black;
+  box-shadow: 4px 4px var(--accent-color);
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: white;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  font-size: 1.1rem;
+  transition: all 0.5s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent-color);
+}
+
+.navbar-nav .nav-item {
+  padding: 0.1rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+/* HOME */
+
+section.home {
+  background-color: #ecf2ff;
+  padding-top: 72px;
+}
+
+@media screen and (max-width: 576px) {
+  section.home {
+    text-align: center;
+  }
+  section.hero img {
+    width: 70%;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  section.home .row {
+    gap: 1rem;
+  }
+}
+
+section.home .display-6 {
+  color: #174d77;
+}
+
+/* EDUCATION */
+
+section.education i {
+  font-size: 2rem;
+  display: block;
+  margin: 1rem;
+  text-align: center;
+}
+
+.btn-outline-dark:hover {
+  border: 2px solid black;
+  box-shadow: 4px 4px var(--accent-color);
+}
+
+/* ABOUT */
+
+@media screen and (min-width: 1024px) {
+  section.about .container {
+    width: 60%;
+  }
+}
+
+/* SKILLS */
+
+section.skills i {
+  font-size: 2rem;
+  margin: 1rem auto 0;
+  border: 2px solid #000000;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.skills .svg-icon {
+  margin: 1rem auto 0;
+  width: 3rem;
+  height: 4rem;
+}
+
+
+section.skills .sql {
+  transform: scale(1.7);
+  padding-top: 0.8rem;
+}
+
+section.skills .react {
+  transform: scale(1.1);
+  padding-top: 0.1rem;
+}
+
+section.skills .progress {
+  height: 0.7rem;
+}
+
+section.skills .card:hover .svg-icon {
+  filter: brightness(0.9);
+  transition: 0.4s ease;
+}
+
+section.skills .card .svg-icon {
+  transition: 0.4s ease;
+}
+
+/* PROJECTS */
+
+section.projects .card {
+  max-width: 34rem;
+  text-align: left;
+  margin-inline: auto;
+}
+
+section.projects .card img {
+  /* max-width: 80%;
+    margin: 1rem auto; */
+  height: 18rem;
+}
+
+section.projects .card:hover .card img {
+  transform: scale(1.1);
+}
+
+.project1 {
+  object-fit: cover;
+}
+
+section.projects .card_image {
+  overflow: hidden;
+}
+
+section.projects .card_image img {
+  transition: transform 0.4s ease;
+}
+
+section.projects .card:hover .card_image img {
+  transform: scale(1.1);
+}
+
+/* TESTIMONIALS */
+
+section.testimonials .container {
+  width: 75%;
+}
+
+section.testimonials .carousel-control-prev,
+section.testimonials .carousel-control-next {
+  width: 5%;
+}
+
+section.testimonials .carousel-item p {
+  max-width: 80%;
+}
+
+section.testimonials .carousel.carousel-fade .carousel-item {
+  transition: opacity 0.5s;
+}
+
+section.testimonials .carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CONTACT */
+
+/* Last Section */
